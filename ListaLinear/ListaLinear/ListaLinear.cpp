@@ -12,7 +12,7 @@ void buscarElemento();
 //--------------------------
 
 
-const int MAX = 2;;
+const int MAX = 4;;
 int lista[MAX]{};
 int nElementos = 0;
 
@@ -103,5 +103,13 @@ void inserirElemento()
 
 void buscarElemento()
 {
+	cout << "Digite o elemento: ";
+	cin >> nElementos;
 
+	for (int n = 0; n < MAX; n++) {
+		if (nElementos == lista[n]) {
+			cout << n << endl;
+		};
+	}
+		
 }
