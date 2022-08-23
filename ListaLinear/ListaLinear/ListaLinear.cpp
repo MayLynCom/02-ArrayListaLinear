@@ -105,12 +105,18 @@ void buscarElemento()
 {
 	cout << "Digite o elemento: ";
 	cin >> nElementos;
-
-	for (int n = 0; n < MAX; n++) {
-		if (nElementos == lista[n]) {
-			cout << nElementos << endl;
-			cout << n << endl;
+	if (nElementos != -1) {
+		for (int n = 0; n < MAX; n++) {
+			if (nElementos == lista[n]) {
+				cout << nElementos << endl;
+				cout << n << endl;
+			}
 		}
 	}
+	else {
+		cout << "Nao tem";
+	}
+
+	
 		
 }
