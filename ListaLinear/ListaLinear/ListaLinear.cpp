@@ -108,8 +108,9 @@ void buscarElemento()
 
 	for (int n = 0; n < MAX; n++) {
 		if (nElementos == lista[n]) {
+			cout << nElementos << endl;
 			cout << n << endl;
-		};
+		}
 	}
 		
 }
