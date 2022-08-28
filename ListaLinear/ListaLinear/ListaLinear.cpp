@@ -20,6 +20,7 @@ int Elemento = 0;
 
 int main()
 {
+	setlocale(LC_ALL, "");
 	menu();
 }
 
@@ -28,7 +29,7 @@ void menu()
 	int op = 0;
 	while (op != 7) {
 		system("cls"); // somente no windows
-		cout << "Menu Lista Linear";
+		cout << "Menú Lista Linear";
 		cout << endl << endl;
 		cout << "1 - Inicializar Lista \n";
 		cout << "2 - Exibir quantidade de elementos \n";
@@ -118,12 +119,12 @@ void buscarElemento()
 			if (Elemento == lista[n])
 			{
 				cout << "Tem o Elemento: " << Elemento << endl;
-				cout << "Na posicao: " << n << endl;
+				cout << "Na posição: " << n << endl;
 				n = nElementos;
 			}
 			else if (Elemento != lista[n] && n == nElementos)
 			{
-				cout << "nao encontrado\n";
+				cout << "Não encontrado\n";
 			}
 		}
 	}
