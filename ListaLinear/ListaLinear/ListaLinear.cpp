@@ -15,6 +15,7 @@ void buscarElemento();
 const int MAX = 4;;
 int lista[MAX]{};
 int nElementos = 0;
+int Elemento = 0;
 
 
 int main()
@@ -103,20 +104,27 @@ void inserirElemento()
 
 void buscarElemento()
 {
-	cout << "Digite o elemento: ";
-	cin >> nElementos;
-	if (nElementos != -1) {
-		for (int n = 0; n < MAX; n++) {
-			if (nElementos == lista[n]) {
-				cout << nElementos << endl;
-				cout << n << endl;
+	if (nElementos == 0)
+	{
+		cout << " A lista esta vazia \n";
+	}
+	else
+	{
+		cout << "Digite o Elemento: ";
+		cin >> Elemento;
+
+		for (int n = 0; n <= nElementos; n++) 
+		{
+			if (Elemento == lista[n])
+			{
+				cout << "Tem o Elemento: " << Elemento << endl;
+				cout << "Na posicao: " << n << endl;
+				n = nElementos;
+			}
+			else if (Elemento != lista[n] && n == nElementos)
+			{
+				cout << "nao encontrado\n";
 			}
 		}
 	}
-	else {
-		cout << "Nao tem";
-	}
-
-	
-		
 }
